@@ -1,0 +1,33 @@
+# ============================================================
+# Small network — quick test scenario
+# 3 nodes, short duration, full mesh
+# ============================================================
+
+simulation:
+  duration: 15.0
+  seed: 123
+
+nodes:
+  count: 3
+  tx_rate: 2.0
+  m: 2
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 1.0
+  alpha_low: 0.001
+  use_random_swipe: false
+
+pow:
+  h: 0.3
+  difficulty: 0
+
+network:
+  topology:
+    type: full_mesh
+  latency:
+    model: UNIFORM
+    base_ms: 50
+    jitter_ms: 20
+  gossip:
+    strategy: flood

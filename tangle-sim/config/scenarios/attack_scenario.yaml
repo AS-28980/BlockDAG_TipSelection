@@ -1,0 +1,46 @@
+# ============================================================
+# Double-spend attack scenario
+#
+# One malicious node issues transactions at a very high rate,
+# attempting to create a competing branch.  This scenario
+# demonstrates the security properties of MCMC vs Random
+# tip selection.
+#
+# Reference: Ferraro et al. §II-A — "A double spending attack
+# is an attempt to exploit the structure of the DLT in order to
+# spend the same digital token multiple times."
+# ============================================================
+
+simulation:
+  duration: 40.0
+  seed: 666
+
+nodes:
+  count: 7
+  tx_rate: 2.0
+  m: 2
+  overrides:
+    node_6:
+      tx_rate: 8.0       # attacker node — floods the network
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 2.0         # extra-high α for security step
+  alpha_low: 0.001
+  use_random_swipe: false
+
+pow:
+  h: 0.5
+  difficulty: 0
+
+network:
+  topology:
+    type: random_k
+    k: 3
+  latency:
+    model: LOGNORMAL
+    base_ms: 120
+    jitter_ms: 60
+  gossip:
+    strategy: random_k
+    k: 3

@@ -1,0 +1,7 @@
+matplotlib>=3.7.0
+numpy>=1.24.0
+pyyaml>=6.0
+# Optional (for enhanced graph visualization):
+# networkx>=3.0
+# rich>=13.0.0
+# pyzmq>=25.0.0

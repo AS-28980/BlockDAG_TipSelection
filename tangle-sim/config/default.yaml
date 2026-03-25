@@ -1,0 +1,44 @@
+# ============================================================
+# Default simulation configuration
+# Tangle Distributed Ledger Simulator
+# ============================================================
+
+simulation:
+  duration: 30.0        # seconds
+  seed: 42              # for reproducibility
+
+# -- Node configuration --
+nodes:
+  count: 5              # number of distributed nodes
+  tx_rate: 2.0          # λ: mean transactions per second per node (Poisson)
+  m: 2                  # number of parents each tx must approve
+
+# -- Tip selection algorithm --
+tip_selection:
+  algorithm: hybrid     # "random", "mcmc", or "hybrid"
+  # MCMC parameters (used when algorithm=mcmc)
+  alpha: 0.01           # α parameter for MCMC random walk
+  # Hybrid parameters (used when algorithm=hybrid)
+  alpha_high: 1.0       # α for security step (high — favours heavy branches)
+  alpha_low: 0.001      # α for swipe step (low — picks up orphans)
+  use_random_swipe: false
+  security_selections: 1
+
+# -- Proof of Work --
+pow:
+  h: 0.5                # simulated PoW delay in seconds (Ferraro et al. parameter h)
+  difficulty: 0          # 0 = pure delay, >0 = require leading zeros
+
+# -- Network --
+network:
+  topology:
+    type: full_mesh      # "full_mesh", "ring", "random_k", "small_world", "star"
+    k: 3                 # degree for random_k / small_world
+    p_rewire: 0.3        # rewiring probability for small_world
+  latency:
+    model: LOGNORMAL     # "CONSTANT", "UNIFORM", "NORMAL", "LOGNORMAL"
+    base_ms: 100         # base / mean latency in milliseconds
+    jitter_ms: 50        # jitter / std-dev
+  gossip:
+    strategy: flood      # "flood", "random_k", "sqrt_n"
+    k: 3                 # peers for random_k gossip

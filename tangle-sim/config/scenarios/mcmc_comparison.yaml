@@ -1,0 +1,40 @@
+# ============================================================
+# MCMC α comparison scenario
+#
+# Reproduces the experiments from Ferraro et al. Figs 7 & 8:
+# Run the simulation with MCMC tip selection and observe
+# how L(t) behaves for different values of α.
+#
+# This config uses α = 0.01.  Modify to 0.0001 for the stable
+# case (Fig. 8) or 0.1 for the divergent case (Fig. 7).
+#
+# Paper parameters: λ = 30, h = 5
+# (scaled down for simulation feasibility)
+# ============================================================
+
+simulation:
+  duration: 45.0
+  seed: 42
+
+nodes:
+  count: 5
+  tx_rate: 5.0            # λ scaled down (paper uses 30)
+  m: 2
+
+tip_selection:
+  algorithm: mcmc
+  alpha: 0.01             # try 0.1, 0.01, 0.001, 0.0001
+
+pow:
+  h: 1.0                  # h = delay (paper uses 5 time steps)
+  difficulty: 0
+
+network:
+  topology:
+    type: full_mesh
+  latency:
+    model: CONSTANT
+    base_ms: 50
+    jitter_ms: 0
+  gossip:
+    strategy: flood

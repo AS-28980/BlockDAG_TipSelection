@@ -1,0 +1,36 @@
+# ============================================================
+# Large network — 10 nodes, small-world topology
+# Demonstrates realistic P2P gossip and partial views
+# ============================================================
+
+simulation:
+  duration: 60.0
+  seed: 777
+
+nodes:
+  count: 10
+  tx_rate: 3.0
+  m: 2
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 0.5
+  alpha_low: 0.001
+  use_random_swipe: true
+  security_selections: 1
+
+pow:
+  h: 1.0
+  difficulty: 0
+
+network:
+  topology:
+    type: small_world
+    k: 4
+    p_rewire: 0.3
+  latency:
+    model: LOGNORMAL
+    base_ms: 150
+    jitter_ms: 80
+  gossip:
+    strategy: sqrt_n
