@@ -1,0 +1,31 @@
+{
+  "total_transactions": 92,
+  "total_issued": 91,
+  "convergence_ratio": 1.0,
+  "orphan_rate": 0.043478260869565216,
+  "avg_propagation_latency_ms": 303.3104283469064,
+  "max_propagation_latency_ms": 484.7860336303711,
+  "per_node": {
+    "node_0": {
+      "pid": 1281,
+      "tangle_size": 92,
+      "final_tips": 4,
+      "avg_tips": 2.72,
+      "txs_issued": 34
+    },
+    "node_1": {
+      "pid": 1282,
+      "tangle_size": 92,
+      "final_tips": 4,
+      "avg_tips": 2.64,
+      "txs_issued": 31
+    },
+    "node_2": {
+      "pid": 1283,
+      "tangle_size": 92,
+      "final_tips": 4,
+      "avg_tips": 2.7,
+      "txs_issued": 26
+    }
+  }
+}

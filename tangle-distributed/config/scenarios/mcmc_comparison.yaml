@@ -1,0 +1,29 @@
+# Pure MCMC — study L(t) dynamics for different α values.
+# Change alpha below to 0.1, 0.01, 0.001, 0.0001 and compare
+# the tip count graphs to Ferraro et al. Figs 7 & 8.
+
+simulation:
+  duration: 30.0
+  seed: 42
+
+nodes:
+  count: 5
+  tx_rate: 4.0
+  m: 2
+  base_port: 9400
+
+tip_selection:
+  algorithm: mcmc
+  alpha: 0.01
+
+pow:
+  h: 0.8
+  difficulty: 0
+
+network:
+  topology:
+    type: full_mesh
+  latency:
+    model: constant
+    base_ms: 50
+    jitter_ms: 0

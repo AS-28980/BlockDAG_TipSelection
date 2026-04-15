@@ -1,0 +1,31 @@
+# ============================================================
+# Default configuration — multi-process distributed Tangle
+# ============================================================
+
+simulation:
+  duration: 30.0
+  seed: 42
+
+nodes:
+  count: 5
+  tx_rate: 2.0          # λ per node
+  m: 2
+  base_port: 9100       # ports assigned sequentially from here
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 1.0
+  alpha_low: 0.001
+  use_random_swipe: false
+
+pow:
+  h: 0.5
+  difficulty: 0
+
+network:
+  topology:
+    type: full_mesh
+  latency:
+    model: lognormal
+    base_ms: 100
+    jitter_ms: 50

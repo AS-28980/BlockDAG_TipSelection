@@ -1,0 +1,33 @@
+# Double-spend attack: node_6 floods at 4× honest rate.
+# Demonstrates hybrid algorithm's resilience.
+
+simulation:
+  duration: 35.0
+  seed: 666
+
+nodes:
+  count: 7
+  tx_rate: 2.0
+  m: 2
+  base_port: 9500
+  overrides:
+    node_6:
+      tx_rate: 8.0
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 2.0
+  alpha_low: 0.001
+
+pow:
+  h: 0.5
+  difficulty: 0
+
+network:
+  topology:
+    type: random_k
+    k: 3
+  latency:
+    model: lognormal
+    base_ms: 120
+    jitter_ms: 60

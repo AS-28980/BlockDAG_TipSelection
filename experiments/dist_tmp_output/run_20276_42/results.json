@@ -1,0 +1,66 @@
+{
+  "total_transactions": 268,
+  "total_issued": 267,
+  "convergence_ratio": 1.0,
+  "orphan_rate": 0.03731343283582089,
+  "avg_propagation_latency_ms": 547.529646264735,
+  "max_propagation_latency_ms": 1847.2707271575928,
+  "per_node": {
+    "node_0": {
+      "pid": 1123,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.56,
+      "txs_issued": 34
+    },
+    "node_1": {
+      "pid": 1124,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.44,
+      "txs_issued": 33
+    },
+    "node_2": {
+      "pid": 1125,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.52,
+      "txs_issued": 26
+    },
+    "node_3": {
+      "pid": 1126,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.54,
+      "txs_issued": 37
+    },
+    "node_4": {
+      "pid": 1127,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.68,
+      "txs_issued": 38
+    },
+    "node_5": {
+      "pid": 1128,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.74,
+      "txs_issued": 31
+    },
+    "node_6": {
+      "pid": 1129,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.64,
+      "txs_issued": 33
+    },
+    "node_7": {
+      "pid": 1130,
+      "tangle_size": 268,
+      "final_tips": 10,
+      "avg_tips": 10.62,
+      "txs_issued": 35
+    }
+  }
+}

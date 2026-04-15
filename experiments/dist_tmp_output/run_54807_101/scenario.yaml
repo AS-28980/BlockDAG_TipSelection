@@ -1,0 +1,29 @@
+network:
+  latency:
+    base_ms: 100.0
+    jitter_ms: 50.0
+    model: lognormal
+  topology:
+    k: 3
+    p_rewire: 0.3
+    seed: 101
+    type: full_mesh
+nodes:
+  base_port: 10400
+  count: 7
+  m: 2
+  overrides:
+    node_0:
+      tx_rate: 4.0
+  tx_rate: 1.0
+pow:
+  difficulty: 0
+  h: 0.2
+simulation:
+  duration: 25.0
+  seed: 101
+tip_selection:
+  algorithm: hybrid
+  alpha: 0.01
+  alpha_high: 1.0
+  alpha_low: 0.001

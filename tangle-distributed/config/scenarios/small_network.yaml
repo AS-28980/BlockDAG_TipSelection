@@ -1,0 +1,27 @@
+# Quick test: 3 processes, 15 seconds
+simulation:
+  duration: 15.0
+  seed: 123
+
+nodes:
+  count: 3
+  tx_rate: 2.0
+  m: 2
+  base_port: 9200
+
+tip_selection:
+  algorithm: hybrid
+  alpha_high: 1.0
+  alpha_low: 0.001
+
+pow:
+  h: 0.3
+  difficulty: 0
+
+network:
+  topology:
+    type: full_mesh
+  latency:
+    model: uniform
+    base_ms: 50
+    jitter_ms: 20

@@ -1,0 +1,52 @@
+Total distributed experiments: 47
+Estimated sim-time total: 1210s (+ spawn overhead)
+[  1/47] H_alpha        n=5 algo=mcmc α=0.001 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=3.65 wall=27.8s
+[  2/47] H_alpha        n=5 algo=mcmc α=0.001 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=4.41 wall=27.8s
+[  3/47] H_alpha        n=5 algo=mcmc α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=3.63 wall=27.8s
+[  4/47] H_alpha        n=5 algo=mcmc α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=3.77 wall=27.9s
+[  5/47] H_alpha        n=5 algo=mcmc α=0.1 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=4.19 wall=28.0s
+[  6/47] H_alpha        n=5 algo=mcmc α=0.1 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=165 conv=1.00 L̄=3.81 wall=28.1s
+[  7/47] H_alpha        n=5 algo=mcmc α=0.5 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=10.86 wall=28.1s
+[  8/47] H_alpha        n=5 algo=mcmc α=0.5 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=9.48 wall=28.0s
+[  9/47] H_alpha        n=5 algo=mcmc α=1 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=19.03 wall=28.0s
+[ 10/47] H_alpha        n=5 algo=mcmc α=1 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=20.57 wall=28.0s
+[ 11/47] H_alpha        n=5 algo=mcmc α=2 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=27.19 wall=28.0s
+[ 12/47] H_alpha        n=5 algo=mcmc α=2 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=23.06 wall=28.1s
+[ 13/47] I_algorithm    n=5 algo=random α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=4.66 wall=28.1s
+[ 14/47] I_algorithm    n=5 algo=random α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=3.60 wall=28.2s
+[ 15/47] I_algorithm    n=5 algo=mcmc α=0.001 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=5.08 wall=28.0s
+[ 16/47] I_algorithm    n=5 algo=mcmc α=0.001 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=4.15 wall=27.9s
+[ 17/47] I_algorithm    n=5 algo=mcmc α=1 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=23.73 wall=28.0s
+[ 18/47] I_algorithm    n=5 algo=mcmc α=1 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=16.60 wall=28.0s
+[ 19/47] I_algorithm    n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=4.42 wall=28.1s
+[ 20/47] I_algorithm    n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=4.13 wall=28.1s
+[ 21/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=275 conv=1.00 L̄=11.23 wall=28.3s
+[ 22/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=270 conv=1.00 L̄=10.60 wall=28.3s
+[ 23/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=ring lat=100 seed=42 → txs=264 conv=1.00 L̄=9.83 wall=28.4s
+[ 24/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=ring lat=100 seed=101 → txs=270 conv=1.00 L̄=7.91 wall=28.3s
+[ 25/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=small_world lat=100 seed=42 → txs=271 conv=1.00 L̄=9.11 wall=28.1s
+[ 26/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=small_world lat=100 seed=101 → txs=267 conv=1.00 L̄=10.06 wall=28.2s
+[ 27/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=random_k lat=100 seed=42 → txs=268 conv=1.00 L̄=10.18 wall=28.4s
+[ 28/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=random_k lat=100 seed=101 → txs=265 conv=1.00 L̄=9.01 wall=28.4s
+[ 29/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=star lat=100 seed=42 → txs=268 conv=1.00 L̄=11.60 wall=28.4s
+[ 30/47] J_topology     n=8 algo=hybrid α=0.01 λ=2.0 topo=star lat=100 seed=101 → txs=271 conv=1.00 L̄=10.22 wall=28.4s
+[ 31/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=20 seed=42 → txs=169 conv=1.00 L̄=3.33 wall=28.1s
+[ 32/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=20 seed=101 → txs=166 conv=1.00 L̄=3.48 wall=28.0s
+[ 33/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=4.18 wall=28.0s
+[ 34/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=4.67 wall=27.8s
+[ 35/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=300 seed=42 → txs=169 conv=0.78 L̄=6.89 wall=27.8s
+[ 36/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=300 seed=101 → txs=166 conv=0.78 L̄=9.62 wall=27.8s
+[ 37/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=800 seed=42 → txs=169 conv=0.42 L̄=5.08 wall=27.7s
+[ 38/47] K_latency      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=800 seed=101 → txs=166 conv=0.43 L̄=5.06 wall=27.8s
+[ 39/47] L_scale        n=3 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=92 conv=1.00 L̄=2.88 wall=27.6s
+[ 40/47] L_scale        n=3 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=98 conv=1.00 L̄=2.01 wall=27.6s
+[ 41/47] L_scale        n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=169 conv=1.00 L̄=4.91 wall=27.9s
+[ 42/47] L_scale        n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=166 conv=1.00 L̄=3.55 wall=27.9s
+[ 43/47] L_scale        n=8 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=274 conv=1.00 L̄=10.88 wall=28.3s
+[ 44/47] L_scale        n=8 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=101 → txs=271 conv=1.00 L̄=9.69 wall=28.2s
+[ 45/47] M_attack       n=7 algo=hybrid α=0.01 λ=1.0 topo=full_mesh lat=100 seed=42 → txs=182 conv=1.00 L̄=4.77 wall=28.9s
+[ 46/47] M_attack       n=7 algo=hybrid α=0.01 λ=1.0 topo=full_mesh lat=100 seed=101 → txs=178 conv=1.00 L̄=6.70 wall=29.4s
+[ 47/47] N_longrun      n=5 algo=hybrid α=0.01 λ=2.0 topo=full_mesh lat=100 seed=42 → txs=416 conv=1.00 L̄=5.04 wall=62.9s
+
+Total wall time: 22.6 min
+Saved: /sessions/keen-serene-darwin/mnt/TipSelection/experiments/results/dist_results.json

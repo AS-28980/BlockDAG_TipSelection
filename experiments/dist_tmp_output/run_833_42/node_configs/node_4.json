@@ -1,0 +1,59 @@
+{
+  "node_id": "node_4",
+  "host": "127.0.0.1",
+  "port": 9584,
+  "peers": [
+    {
+      "node_id": "node_0",
+      "host": "127.0.0.1",
+      "port": 9580
+    },
+    {
+      "node_id": "node_3",
+      "host": "127.0.0.1",
+      "port": 9583
+    },
+    {
+      "node_id": "node_2",
+      "host": "127.0.0.1",
+      "port": 9582
+    },
+    {
+      "node_id": "node_1",
+      "host": "127.0.0.1",
+      "port": 9581
+    }
+  ],
+  "tip_selection": {
+    "algorithm": "mcmc",
+    "alpha": 0.1,
+    "alpha_high": 1.0,
+    "alpha_low": 0.001
+  },
+  "pow": {
+    "difficulty": 0,
+    "h": 0.2
+  },
+  "tx_rate": 2.0,
+  "m": 2,
+  "latency": {
+    "base_ms": 100.0,
+    "jitter_ms": 50.0,
+    "model": "lognormal"
+  },
+  "genesis": {
+    "tx_id": "4cda7b8049c8e019",
+    "issuer": "GENESIS",
+    "parents": [],
+    "value": 0.0,
+    "sender_addr": "",
+    "receiver_addr": "",
+    "timestamp": 1776247000.8826485,
+    "nonce": 0,
+    "status": "CONFIRMED",
+    "cumulative_weight": 1
+  },
+  "duration": 25.0,
+  "output_dir": "/sessions/keen-serene-darwin/mnt/TipSelection/experiments/dist_tmp_output/run_833_42/nodes",
+  "seed": 590
+}
